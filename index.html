@@ -3,16 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Independent Web and Digital Developer | Zaid Nazim Mughal </title>
-    <meta name="description" content="Hi I'm Zaid, a UI & UX designer based in Dublin. Mobile and Responsive Web Design, eCommerce Websites, Branding and Logo Design.">
+    <title>Subhan Ali | Computing Student and Web Developer</title>
+    <meta name="description" content="Hi, I'm Subhan Ali, a Computing student at Dorset College in Dublin. This website showcases my HTML exercises and the web development skills I'm learning.">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+
+    body {
+        @apply text-center bg-green-100;
+    }
+
+    header {
+        @apply pt-8 px-[9%] pb-[42px];
+
+        @variant md {
+            @apply py-[3%] px-[20%];
+        }
+    }
+
+    header h1 {
+        @apply tracking-tighter text-5xl mb-8;
+
+        @variant md {
+            @apply text-8xl;
+        }
+    }
+
+    header h2 {
+        @apply text-3xl italic;
+
+        @variant md {
+            @apply text-5xl;
+        }
+    }
+
+    section {
+        @apply pt-8 px-[9%] pb-[42px];
+
+        @variant md {
+            @apply py-[3%] px-[20%];
+        }
+    }
+
+    section h2 {
+        @apply mt-8 tracking-wider;
+    }
+
+    section h3 {
+        @apply mt-8 mb-6 text-2xl uppercase font-bold;
+
+        @variant md {
+            @apply text-3xl;
+        }
+    }
+
+    section p {
+        @apply mb-6 text-xl;
+
+        @variant md {
+            @apply text-2xl;
+        }
+    }
+
+    a {
+        @apply text-green-800;
+    }
+
+</style>
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">    
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">    
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">    
+<link rel="manifest" href="assets/img/favicons/site.webmanifest">
+
 </head>
 <body>
-<h1>Purple Pixels Web Agency</h1>
-<h2>Web / UI Designer</h2>
-<p>I created this website to showcase some of my recent web design work.</p> 
-<p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
-<p><a href="exercises/page-2.html">Purple Rain</a></p>
 
-    
+    <header>
+        <h1>Hi, I'm Subhan Ali</h1>
+        <h2>Computing Student and Aspiring Web Developer</h2>
+    </header>
+
+    <main>
+        <section>
+
+            <p>I'm a Computing student at Dorset College in Dublin. My student ID is 78243.</p>
+
+            <p>I created this website to showcase my HTML exercises and develop my web development skills.</p>
+
+            <h3>Sample Web Pages</h3>
+
+            <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
+
+            <p><a href="exercises/page-2.html">Purple Rain</a></p>
+
+            <p><a href="exercises/page-3.html">Web Page with Sections</a></p>
+
+            <p><a href="exercises/page-4.html">Vincent van Gogh</a></p>
+
+            <p><a href="exercises/page-5.html">Ireland's Top Five Visitor Attractions</a></p>
+            <p><a href="exercises/hero-text.html">Hero block with animated text</a></p> 
+        </section>
+    </main>
+
 </body>
 </html>

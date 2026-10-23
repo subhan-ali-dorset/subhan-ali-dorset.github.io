@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hero Block with Image</title>
+
+    <meta name="description" content="A hero block with a background image and a tinted overlay.">
+
+    <link rel="preload" href="assets/img/business.jpg" as="image">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+
+        header {
+            @apply relative min-h-[60vh]
+                   bg-[url('assets/img/business.jpg')]
+                   bg-cover bg-center
+                   flex flex-col justify-center
+                   px-8 py-12 text-center;
+
+            @variant md {
+                @apply min-h-[80vh];
+            }
+
+            @variant lg {
+                @apply px-60;
+            }
+        }
+
+        header::before {
+            content: "";
+            @apply absolute inset-0 bg-black/40;
+        }
+
+        header h1,
+        header h2 {
+            @apply relative z-10 text-white text-shadow-lg/30;
+        }
+
+        header h1 {
+            @apply text-7xl font-bold tracking-tight mb-6;
+
+            @variant md {
+                @apply text-8xl;
+            }
+        }
+
+        header h2 {
+            @apply text-3xl;
+
+            @variant md {
+                @apply text-5xl;
+            }
+        }
+
+        .slide-in-top {
+            animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @keyframes slide-in-top {
+            0% {
+                transform: translateY(-1000px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-in-left {
+            animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @keyframes slide-in-left {
+            0% {
+                transform: translateX(-1000px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+
+    //Subhan Ali 78243//
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="slide-in-top">Albert Camus</h1>
+
+        <h2 class="slide-in-left">Creative Web Developer</h2>
+
+    </header>
+
+</body>
+</html>

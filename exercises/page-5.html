@@ -10,27 +10,23 @@
     <meta name="description" content="Explore five popular visitor attractions in Ireland, from the Guinness Storehouse to the Book of Kells Exhibition.">
 
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 
     <style type="text/tailwindcss">
 
-        /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
             scroll-padding-top: 24px;
         }
 
 
-        /* Header */
         header {
             @apply flex flex-col justify-around items-center w-full mx-auto
                    bg-green-300
@@ -62,7 +58,6 @@
         }
 
 
-        /* Main section */
         section {
             @apply bg-green-200
                    px-12 lg:px-68
@@ -90,14 +85,13 @@
         }
 
 
-        /* Rounded images */
         section img {
             @apply my-5
                    rounded-[25px];
         }
 
 
-        /* Highlighted visitor numbers */
+    
         section .highlight-text span {
             @apply bg-green-700
                    text-white
@@ -106,7 +100,7 @@
         }
 
 
-        /* Hyperlink styling */
+    
         a {
             @apply text-green-800
                    underline
@@ -119,7 +113,7 @@
         }
 
 
-        /* Backpackers image */
+        
         header img {
             @apply w-full
                    max-w-[612px]
@@ -136,8 +130,29 @@
         section *:last-child {
             @apply mb-0!;
         }
+        a {
+    @apply text-green-800
+           hover:text-green-600
+           focus:text-green-600
+           transition-colors duration-300;
+}
+
+header h1,
+section h2 {
+    @apply font-['Oswald'];
+}
+
+header p,
+section p {
+    @apply font-['Lato'];
+}
 
     </style>
+    //Subhan Ali 78243//
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -145,7 +160,7 @@
 <body id="top-of-page">
 
 
-    <!-- Header -->
+    
     <header>
 
         <h1>Ireland's Top Five Visitor Attractions</h1>
@@ -184,8 +199,7 @@
         </p>
 
 
-        <!-- Introduction -->
-
+        
         <p>
             Ireland offers memorable places to explore,
             including striking coastal scenery, historic
@@ -203,7 +217,7 @@
         </p>
 
 
-        <!-- Backpackers image -->
+        
         <img
             src="assets/img/backpackers.png"
             alt="Two visitors ready to explore Ireland"
@@ -215,14 +229,13 @@
 
 
 
-    <!-- Main content -->
+   
     <main>
 
         <section>
 
 
-            <!-- Attraction 1 -->
-
+            
             <h2 id="guinness">
                 Guinness Storehouse, Dublin
             </h2>
@@ -252,7 +265,7 @@
 
 
 
-            <!-- Attraction 2 -->
+           
 
             <h2 id="cliffs-of-moher">
                 Cliffs of Moher, Co. Clare
@@ -282,7 +295,7 @@
 
 
 
-            <!-- Attraction 3 -->
+            
 
             <h2 id="dublin-zoo">
                 Dublin Zoo
@@ -313,8 +326,7 @@
 
 
 
-            <!-- Attraction 4 -->
-
+            
             <h2 id="aquatic-centre">
                 National Aquatic Centre, Dublin
             </h2>
@@ -343,7 +355,7 @@
 
 
 
-            <!-- Attraction 5 -->
+           
 
             <h2 id="kells-tcd">
                 Book of Kells Exhibition, Trinity College, Dublin
@@ -373,8 +385,7 @@
 
 
 
-            <!-- Return to top -->
-
+            
             <p>
                 <a href="#top-of-page">
                     Return to top of page
